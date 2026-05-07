@@ -1,6 +1,6 @@
 #include <iostream>
 
-double expo(double x, double n){
+double expo(int x, int n){
 	static double sum = 1;
 
 	if(n == 0){
@@ -8,7 +8,7 @@ double expo(double x, double n){
 		return sum;
 	}
 
-	sum = 1 + x/n * sum;
+	sum = 1 + x * sum /n;
 
 	return expo(x, n-1);
 }
