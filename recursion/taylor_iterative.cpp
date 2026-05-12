@@ -13,6 +13,6 @@ double expo(int x, int n){
 
 
 int main (void){
-	std::cout<<expo(2,3)<<std::endl;
+	std::cout<<expo(1,10)<<std::endl;
 	return 0;
 }
